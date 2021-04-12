@@ -1,1 +1,10 @@
-<p>listado works!</p>
+<ul>
+    <li *ngFor="let video of videos">
+        <div>
+            <p>{{video.id}}</p>
+            <p>{{video.titulo}}</p>
+            <p>{{video.url}}</p>
+            <p>{{video.descripcion}}</p>
+            <p>{{video.estrellas}}</p>
+        </div>
+    </li>

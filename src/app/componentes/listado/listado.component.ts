@@ -1,6 +1,7 @@
 import { VideoService } from './../../servicios/video.service';
 import { Component, OnInit } from '@angular/core';
 import { Video } from 'src/app/modelos/video';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-listado',
