@@ -1,0 +1,6 @@
+{
+    "videos": [
+        { "id": 1, "titulo": "Hyperventilate", "url": "https://youtu.be/SVGjOUnQZ58", "descripcion": "Actuación 'Unplugged' de Frost", "estrellas": 5 },
+        { "id": 2, "titulo": "Owner of a Lonely Heart", "url": "https://youtu.be/SVOuYquXuuc", "descripcion": "Videoclip un poco antiguo del tema Owner of a Lonely Heart", "estrellas": 4 }
+    ]
+}
