@@ -1,3 +1,7 @@
 <div>
-    <img *ngFor="let num of [1, 2, 3, 4, 5]" [src]="'/assets/imgs/estrella-' + (num <= valor ? 'rellena' : 'vacia') + '.svg'" style="height: 1em">
+    <img 
+        *ngFor="let num of [1, 2, 3, 4, 5]" 
+        [src]="'/assets/imgs/estrella-' + (num <= valor ? 'rellena' : 'vacia') + '.svg'" 
+        (click)="estrellaClick(num)"
+        style="height: 1em">
 </div>

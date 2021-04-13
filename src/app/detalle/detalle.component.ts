@@ -32,4 +32,11 @@ export class DetalleComponent implements OnInit {
     });
   }
 
+  estrellaClick(num: 1 | 2 | 3 | 4 | 5): void {
+    console.log('DETALLE', num);
+
+    this.videoService.modificarEstrellas(this.video.id, num).subscribe(
+      () => this.video.estrellas = num
+    );
+  }
 }

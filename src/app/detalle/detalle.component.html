@@ -3,7 +3,7 @@
     <app-video id="{{video.url}}"></app-video>
     <h2>{{video.titulo}}</h2>
     <p>{{video.descripcion}}</p>
-    <app-estrellas valor="{{video.estrellas}}"></app-estrellas>
+    <app-estrellas valor="{{video.estrellas}}" (clic)="estrellaClick($event)"></app-estrellas>
 
     <ul>
         <li *ngFor="let comentario of comentarios">

@@ -24,4 +24,8 @@ export class VideoService {
   obtenerComentariosPorVideoId(id: number): Observable<Comentario[]> {
     return this.http.get<Comentario[]>(this.url + id + '/comentarios');
   }
+
+  modificarEstrellas(id: number, num: 1|2|3|4|5): Observable<any> {
+    return this.http.patch<any>(this.url + id, { estrellas: num });
+  }
 }
