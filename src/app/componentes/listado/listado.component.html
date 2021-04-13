@@ -1,11 +1,8 @@
 <ul>
     <li *ngFor="let video of videos">
         <div>
-            <p>{{video.id}}</p>
-            <p>{{video.titulo}}</p>
-            <p>
-                <iframe width="560" height="315" [src]="video.url | youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </p>
+            <app-video id="{{video.url}}"></app-video>
+            <h2>{{video.titulo}}</h2>
             <p>{{video.descripcion}}</p>
             <p>{{video.estrellas}}</p>
         </div>

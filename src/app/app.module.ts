@@ -7,11 +7,13 @@ import { ListadoComponent } from './componentes/listado/listado.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { YoutubePipe } from './pipes/youtube.pipe';
+import { VideoComponent } from './componentes/video/video.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
-    YoutubePipe
+    YoutubePipe,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
