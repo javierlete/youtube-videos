@@ -15,4 +15,8 @@ export class VideoService {
   listado(): Observable<Video[]> {
     return this.http.get<Video[]>(this.url);
   }
+
+  obtenerPorId(id: number): Observable<Video> {
+    return this.http.get<Video>(this.url + id);
+  }
 }
