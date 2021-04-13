@@ -39,4 +39,12 @@ export class DetalleComponent implements OnInit {
       () => this.video.estrellas = num
     );
   }
+
+  nuevoComentario(nick: string, texto: string): void {
+    const comentario = {videoId: this.video.id, nick, texto} as Comentario;
+    console.log(comentario);
+    this.videoService.nuevoComentario(comentario).subscribe(
+      () => this.comentarios.push(comentario)
+    );
+  }
 }

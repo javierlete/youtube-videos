@@ -5,6 +5,13 @@
     <p>{{video.descripcion}}</p>
     <app-estrellas valor="{{video.estrellas}}" (clic)="estrellaClick($event)"></app-estrellas>
 
+    <div>
+        <input #nick placeholder="nick">
+        <br />
+        <textarea #comentario rows="3" style="width: 100%" placeholder="comentario"></textarea>
+        <button (click)="nuevoComentario(nick.value, comentario.value)">Añadir comentario</button>
+    </div>
+
     <ul>
         <li *ngFor="let comentario of comentarios">
             <div class="nick">{{comentario.nick}}</div>
