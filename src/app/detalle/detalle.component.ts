@@ -2,6 +2,7 @@ import { VideoService } from './../servicios/video.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Video } from '../modelos/video';
+import { Comentario } from '../modelos/comentario';
 
 @Component({
   selector: 'app-detalle',
@@ -10,6 +11,7 @@ import { Video } from '../modelos/video';
 })
 export class DetalleComponent implements OnInit {
   video: Video;
+  comentarios: Comentario[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -19,8 +21,13 @@ export class DetalleComponent implements OnInit {
     // this.id = this.route.snapshot.paramMap.get('id');
     this.route.paramMap.subscribe(map => {
       const id = +map.get('id');
+
       this.videoService.obtenerPorId(id).subscribe(
         video => this.video = video
+      );
+
+      this.videoService.obtenerComentariosPorVideoId(id).subscribe(
+        comentarios => this.comentarios = comentarios
       );
     });
   }

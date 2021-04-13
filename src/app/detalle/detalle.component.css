@@ -1,0 +1,14 @@
+ul {
+    list-style: none;
+}
+
+.nick {
+    display: inline-block;
+    width: 10%;
+    font-weight: bold;
+}
+
+.texto {
+    display: inline-block;
+    width: 90%;
+}

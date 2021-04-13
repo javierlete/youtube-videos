@@ -28,5 +28,25 @@
             "descripcion": "Videoclip un poco antiguo del tema Owner of a Lonely Heart",
             "estrellas": 2
         }
+    ],
+    "comentarios": [
+        {
+            "id": 1,
+            "nick": "yomismo",
+            "texto": "Este video está muy bien",
+            "videoId": 1
+        },
+        {
+            "id": 2,
+            "nick": "pepe",
+            "texto": "Pasable",
+            "videoId": 1
+        },
+        {
+            "id": 3,
+            "nick": "juan",
+            "texto": "¿Alguien lo ha escuchado?",
+            "videoId": 2
+        }
     ]
 }

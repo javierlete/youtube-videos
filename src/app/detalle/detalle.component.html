@@ -1,6 +1,19 @@
-<app-video id="{{video.url}}"></app-video>
-<h2>{{video.titulo}}</h2>
-<p>{{video.descripcion}}</p>
-<app-estrellas valor="{{video.estrellas}}"></app-estrellas>
+<ng-container *ngIf="video">
 
-<a routerLink="/detalle/SVGjOUnQZ58">Cambiar</a>
+    <app-video id="{{video.url}}"></app-video>
+    <h2>{{video.titulo}}</h2>
+    <p>{{video.descripcion}}</p>
+    <app-estrellas valor="{{video.estrellas}}"></app-estrellas>
+
+    <ul>
+        <li *ngFor="let comentario of comentarios">
+            <div class="nick">{{comentario.nick}}</div>
+            <div class="texto">{{comentario.texto}}</div>
+        </li>
+    </ul>
+
+</ng-container>
+
+<div *ngIf="!video">
+    <h1>Cargando</h1>
+</div>
