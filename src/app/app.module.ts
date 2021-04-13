@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { YoutubePipe } from './pipes/youtube.pipe';
 import { VideoComponent } from './componentes/video/video.component';
 import { EstrellasComponent } from './estrellas/estrellas.component';
+import { DetalleComponent } from './detalle/detalle.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
     YoutubePipe,
     VideoComponent,
-    EstrellasComponent
+    EstrellasComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
