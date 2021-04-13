@@ -8,12 +8,14 @@ import { ListadoComponent } from './componentes/listado/listado.component';
 import { HttpClientModule } from '@angular/common/http';
 import { YoutubePipe } from './pipes/youtube.pipe';
 import { VideoComponent } from './componentes/video/video.component';
+import { EstrellasComponent } from './estrellas/estrellas.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
     YoutubePipe,
-    VideoComponent
+    VideoComponent,
+    EstrellasComponent
   ],
   imports: [
     BrowserModule,
